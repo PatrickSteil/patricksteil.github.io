@@ -8,83 +8,47 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@graph": [
+  "@type": "Person",
+  "@id": "https://patricksteil.github.io/#person",
+  "name": "Patrick Steil",
+  "alternateName": "patricksteil",
+  "url": "https://patricksteil.github.io/",
+  "jobTitle": "Algorithm Engineering Researcher",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Karlsruhe Institute of Technology (KIT)",
+    "url": "https://www.kit.edu/"
+  },
+  "alumniOf": [
     {
-      "@type": "Person",
-      "@id": "https://patricksteil.github.io/#person",
-      "name": "Patrick Steil",
-      "alternateName": "patricksteil",
-      "url": "https://patricksteil.github.io/",
-      "jobTitle": "Algorithm Engineering Researcher",
-      "worksFor": {
-        "@type": "Organization",
-        "name": "Karlsruhe Institute of Technology (KIT)",
-        "url": "https://www.kit.edu/"
-      },
-      "alumniOf": [
-        {
-          "@type": "CollegeOrUniversity",
-          "name": "University of Heidelberg",
-          "url": "https://www.uni-heidelberg.de/en"
-        },
-        {
-          "@type": "CollegeOrUniversity",
-          "name": "Hochschule Mannheim",
-          "url": "https://www.hs-mannheim.de/"
-        }
-      ],
-      "sameAs": [
-        "https://www.linkedin.com/in/patricksteil/",
-        "https://github.com/PatrickSteil",
-        "https://dblp.org/pid/340/4180.html",
-        "https://scholar.google.com/citations?user=XM3ULAYAAAAJ&hl=en",
-        "https://orcid.org/0000-0003-3282-4533"
-      ],
-      "knowsAbout": [
-        "Algorithms",
-        "Graph Theory",
-        "Route Planning",
-        "Public Transit Routing",
-        "GTFS"
-      ],
-      "knowsLanguage": [
-        "German",
-        "English",
-        "French"
-      ]
+      "@type": "CollegeOrUniversity",
+      "name": "University of Heidelberg",
+      "url": "https://www.uni-heidelberg.de/en"
     },
     {
-      "@type": "WebSite",
-      "@id": "https://patricksteil.github.io/#website",
-      "url": "https://patricksteil.github.io/",
-      "name": "Patrick Steil",
-      "publisher": {
-        "@id": "https://patricksteil.github.io/#person"
-      },
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://patricksteil.github.io/?q={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://patricksteil.github.io/#breadcrumbs",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://patricksteil.github.io/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "About",
-          "item": "https://patricksteil.github.io/#about"
-        }
-      ]
+      "@type": "CollegeOrUniversity",
+      "name": "Hochschule Mannheim",
+      "url": "https://www.hs-mannheim.de/"
     }
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/in/patricksteil/",
+    "https://github.com/PatrickSteil",
+    "https://dblp.org/pid/340/4180.html",
+    "https://scholar.google.com/citations?user=XM3ULAYAAAAJ&hl=en",
+    "https://orcid.org/0000-0003-3282-4533"
+  ],
+  "knowsAbout": [
+    "Algorithms",
+    "Graph Theory",
+    "Route Planning",
+    "Public Transit Routing",
+    "GTFS"
+  ],
+  "knowsLanguage": [
+    "German",
+    "English",
+    "French"
   ]
 }
 </script>
@@ -93,7 +57,6 @@
 
 <header>
 <h1>Patrick Steil</h1>
-<p>computer science student</p>
 <p><a href="mailto:patrick@steil.dev">email</a> | <a href="https://github.com/PatrickSteil">github</a> | <a href="https://www.linkedin.com/in/patricksteil/">linkedin</a></p>
 </header>
 
@@ -150,19 +113,10 @@ Software Developer, 06/2025 – ongoing
 <ul>
 <li>
 Internship, 04/2024 - 06/2024
-<p>
-During my internship at Mentz GmbH, I worked in the department for algorithms in journey planning.
-My main tasks included the development and optimization of algorithms for the computation of optimal routes in public- and individual transport.
-I used technologies such as C++20, Microsoft Visual Studio and Mercurial.
-Main projects and activities:
-</p>
 <ol>
-<li>Collaboration on a prototype for a <i>RAPTOR</i>-based public transportation router, including variants such as <i>Range-RAPTOR</i> and <i>McRAPTOR</i></li>
-<li>Performance tuning of the implementation (using SIMD, prefetching techniques, ...)</li>
-<li>Testing and validation of the <i>RAPTOR</i> implementation against a custom <i>CSA</i> implementation</li>
-<li>Adaptation of algorithms to practical requirements, e.g., non-transitive footpaths</li>
-<li>Extension of a productive public transport router for the dynamic generation of connection links</li>
-<li>Discussion and presentation of IV routing algorithms such as <i>Customizable Contraction Hierarchies (CCH)</i> and <i>Customizable Route Planning (CRP)</i></li>
+<li>Prototype of a <i>RAPTOR</i>-based public transit router (<i>Range-RAPTOR</i>, <i>McRAPTOR</i>), including SIMD and prefetching optimizations, in C++20.</li>
+<li>Validated the implementation against a custom <i>CSA</i> implementation and adapted it to practical requirements such as non-transitive footpaths.</li>
+<li>Extended a productive public transport router for the dynamic generation of connection links.</li>
 </ol>
 </li>
 </ul>
@@ -218,41 +172,14 @@ Transportation Science<br>
 Code for my Master Thesis.
 </li>
 <li>
-<b>CCH</b> (<a href="https://github.com/PatrickSteil/CCH">GitHub</a>)<br>
-Code for the "Routenplanungs-Praktikum" at the KIT. Implemented is the <a href="https://i11www.iti.kit.edu/extra/publications/dsw-cch-sea-14.pdf">Customizable Contraction Hierarchies</a> algorithm.
-</li>
-<li>
-<b>ORCS-Journal</b> (<a href="https://www.orc.si/">Website</a>)<br>
-Welcome to One-Sided Results in Computer Science (ORCS), a unique journal dedicated to concise yet impactful contributions to Computer Science.
-</li>
-<li>
 <b>Arc-Flag TB Code</b> (<a href="https://github.com/TransitRouting/Arc-FlagTB">GitHub</a>)<br>
-This is the code for my paper "Arc-Flags Meet Trip-Based Public Transit Routing".
+Code for my paper "Arc-Flags Meet Trip-Based Public Transit Routing".
 </li>
 <li>
-<b>K-ary Heap</b> (<a href="https://github.com/PatrickSteil/K-ary_PyHeap">GitHub</a>)<br>
-Open source K-ary (addressable) heap written in Python. Since I did not find any other open source implementation in Python, I decided to publish my version.
+<b>CCH</b> (<a href="https://github.com/PatrickSteil/CCH">GitHub</a>)<br>
+Code for the "Routenplanungs-Praktikum" at the KIT. Implements <a href="https://i11www.iti.kit.edu/extra/publications/dsw-cch-sea-14.pdf">Customizable Contraction Hierarchies</a>.
 </li>
-<li>
-<b>Parallel Filter Kruskal</b> (<a href="https://github.com/PatrickSteil/DAG-HL">GitHub</a>)<br>
-Implementation of the <a href="https://algo2.iti.kit.edu/documents/fkruskal.pdf">FilterKruskal MST Algortihm</a>.
-</li>
-<li>
-<b>Bloom Filter Labeling</b> (<a href="https://github.com/PatrickSteil/BFL">GitHub</a>)<br>
-Implementation of Bloom Filter Labeling (BFL).
-</li>
-<li>
-<b>Parallel Shortest Path Labeling</b> (<a href="https://github.com/PatrickSteil/PSL">GitHub</a>)<br>
-Implementation of Parallel Shortest Path Labeling (PSL).
-</li>
-<li>
-<b>Pruned Path Labeling</b> (<a href="https://github.com/PatrickSteil/PPL">GitHub</a>)<br>
-Implementation of Pruned Path Labeling (PPL).
-</li>
-<li>
-<b>Pruned Landmark Labeling</b> (<a href="https://github.com/PatrickSteil/DAG-HL">GitHub</a>)<br>
-Implementation of Pruned Landmark Labeling (PPL), as well as a parallelized version tuned for DAGs.
-</li>
+<li>More on <a href="https://github.com/PatrickSteil">GitHub</a>.</li>
 </ul>
 </section>
 
@@ -260,13 +187,16 @@ Implementation of Pruned Landmark Labeling (PPL), as well as a parallelized vers
 <h2>documents</h2>
 <ul>
 <li>
-<b>Arc-Flag TB Presentation</b> (<a href="docs/sea2023BARCELONA.pdf">pdf</a>)<br>
-Presentation about Arc-Flag TB. <a href="https://www.sea2023.cs.upc.edu/92268/section/40806/sea-2023.html">SEA Barcelona 2023</a>.
+<b>Arc-Flag TB Talk</b> (<a href="docs/sea2023BARCELONA.pdf">pdf</a>)<br>
+<a href="https://www.sea2023.cs.upc.edu/92268/section/40806/sea-2023.html">SEA 2023</a>, Barcelona
 </li>
 <li><b>Bachelor-Thesis</b> (<a href="docs/bachelorarbeitsteil.pdf">pdf</a>)</li>
 <li><b>Master-Thesis Defense</b> (<a href="docs/masterthesisdefense.pdf">pdf</a>)</li>
 <li><b>Master-Thesis</b> (<a href="docs/steil_patrick_masterthesis.pdf">pdf</a>)</li>
-<li><b>T-REX ESA Talk</b> (<a href="docs/trex_esa.pdf">pdf</a>)</li>
+<li>
+<b>T-REX Talk</b> (<a href="docs/trex_esa.pdf">pdf</a>)<br>
+ESA 2026
+</li>
 </ul>
 </section>
 
